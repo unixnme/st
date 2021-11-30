@@ -24,12 +24,12 @@ int main(int argc, const char** argv) {
         return EXIT_FAILURE;
     }
 
-    // sum and sum of squares
-    double s = 0, ss = 0;
+    // this utility must have O(1) space complexity
+    // so we are sacrificing accuracy for memory efficiency
+    double s = 0, ss = 0; // sum and sum of squares
     uint64_t count = 0;
     double min = std::numeric_limits<double>::max();
     double max = std::numeric_limits<double>::min();
-
 
     std::string line;
     uint64_t line_idx = 0;
